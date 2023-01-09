@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Librerias_mias:jar">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="Librerias_mias.jar">
+      <element id="module-output" name="Librerias_mias" />
+      <element id="library" level="project" name="src" />
+    </root>
+  </artifact>
+</component>
