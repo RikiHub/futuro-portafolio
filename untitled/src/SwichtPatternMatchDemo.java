@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class SwichtPatternMatchDemo {
 
@@ -36,6 +37,9 @@ public class SwichtPatternMatchDemo {
             System.out.println('\r'+"*************" + color.equals(colorIgual));
         }
 
-        System.out.println(colors.stream().filter(color->color.equals("Blue")).collect(Collectors.toList()));
+        colors.stream().filter(color->color.equals("Blue")).collect(Collectors.toList()).forEach(System.out::println);
+
+
+        Stream.of("a","b","c","d","e").parallel().forEach(System.out::println);
     }
 }
